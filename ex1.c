@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int main(int argc, int *argv)
+int main(int argc, char *argv[])
 {
-  int element_count = 12;
+  int element_count = 10;
   int ints[element_count];
   char *strings[element_count];
 
@@ -18,13 +18,9 @@ int main(int argc, int *argv)
   printf("errors goes here:\n");
   ints[8] = putchar(-1);
   ints[9] = putchar(10);
-  //  ints[11] = putchar(10);
 
   for(int i=0; i<element_count; i++) {
-    strings[i] = "int%d is %d\n";
-  }
-  for(int i=0; i<element_count; i++) {
-    printf(strings[i], i, ints[i]);
+    printf("int%d is %d\n", i, ints[i]);
   } 
   for(int i=97; i<123; i++) {
     putchar(i);
