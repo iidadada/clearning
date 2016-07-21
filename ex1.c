@@ -4,7 +4,6 @@ int main(int argc, char *argv[])
 {
   int element_count = 10;
   int ints[element_count];
-  char *strings[element_count];
 
   ints[0] = puts("a");
   ints[1] = fputs("b\n", stdout);
